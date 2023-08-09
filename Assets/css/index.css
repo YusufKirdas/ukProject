@@ -1,4 +1,115 @@
+/* Start of ... */
+
 .navbar-brand{
-    height: 3%;
-    width: 6%;
+    height: 9%;
+    width: 16%;
 }
+
+/* Start of ... */
+
+.projectName{
+    font-size: large;
+    color: white;
+}
+
+/* Start of the Progress bar */
+
+.containerProgressbar{
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Progressbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 1250px;
+    width: 100%;
+}
+
+.Progressbar .steps{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.steps .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    width: 75px;
+    color: #999;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 50%;
+    background: #fff;
+    border: 4px solid #e0e0e0;
+}
+
+.Progressbar .stepNaming{
+    display: flex;
+    width: 100%;
+    align-items: left;
+    justify-content: space-between;
+    position: relative;
+}
+
+.stepNaming .stepTitle {
+    font-size: 12px;
+    width: 75px;
+}
+
+.stepNaming .stepTitle.active {
+    font-size: 12px;
+    font-weight: 700;
+    color: #474747;
+    width: 75px;
+}
+
+.steps .circle.active{
+    border: 6px solid orange;
+}
+
+.steps .progressLine {
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #e0e0e0;
+    z-index: -1;
+}
+
+.progressLine .indicator {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: orange;
+}
+
+.Progressbar .buttons {
+    display: flex;
+    gap: 50px;
+}
+
+.buttons button {
+    padding: 8px 25px;
+    background: orange;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.buttons button:disabled {
+    background: rgb(204, 185, 151);
+    cursor: not-allowed;
+}
+
