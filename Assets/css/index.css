@@ -113,3 +113,115 @@
     cursor: not-allowed;
 }
 
+.containerTableStructure{
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    width: 1250px;
+}
+
+.row .col-8 {
+    padding-left: 0;
+    padding-bottom: 25px;
+}
+
+.row .col-8 .tableOne {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    background: #f3f2f2;
+    border: 1px solid rgb(184, 184, 184);
+}
+
+.row .col-4 {
+    padding: 0;
+}
+
+.verticalLine {
+    border-left: 1px solid rgb(184, 184, 184);
+    height: 70px;
+}
+
+.tableOneStart {
+    padding-left: 25px;
+    padding-right: 120px;
+}
+
+.tableOneMiddle {
+    padding-left: 25px;
+    padding-right: 150px;
+}
+
+.tableOneEnd {
+    padding-left: 25px;
+}
+
+.row .col-8 .tableTwo {
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    background: #f3f2f2;
+    border: 1px solid rgb(184, 184, 184);
+}
+
+.tableTwo .tableTwoStart {
+    display: flex;
+}
+
+.mainTitle {
+    font-size: 20px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+}
+
+.tableTwo .subtitleTable {
+    padding-left: 25px;
+    padding-right: 50px;
+}
+
+.tableTwo .textTable {
+    padding-right: 25px;
+}
+
+.row .col-4 .tableThree {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    height: 310px;
+    background: #f3f2f2;
+    border: 1px solid rgb(184, 184, 184);
+    
+}
+
+.tableThree .documentFile {
+    display: flex;
+    padding-top: 15px;
+}
+
+.iconDocuments {
+    color: orange;
+}
+
+.horizontalLine{
+    border-bottom: 1px solid rgb(184, 184, 184);
+    height: 10px;
+    width: 350px;
+    margin-left: 25px;
+}
+
+.documentFile .iconFile{
+    padding-left: 25px;
+}
+
+.documentFile .documentTitle{
+    color: black;
+    padding-left: 15px;
+    padding-right: 195px;
+}
+
+.containerFooter {
+    display: flex;
+}
