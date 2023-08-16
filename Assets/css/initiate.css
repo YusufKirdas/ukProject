@@ -1,0 +1,377 @@
+/* Color scheme */
+
+:root{
+    --railwayOrange : #e35100;
+    --railwayWhite: #ffffff;
+    --railwayLightGrey : #e2e2ea;
+    --railwayDarkGrey : #666;
+    --railwayBlack : #333;
+    --railwayLightBlue : #106aa3;
+    --railwayDarkBlue : #005272;
+    --railwayBackground: #FAFAFB;
+}
+
+/* Start of ... */
+
+.col-sm{
+    padding-left: 90px;
+}
+
+.navbar-brand{
+    height: 40px;
+    width: 80px;
+}
+
+.collapse .navbar-collapse {
+    align-items: right;
+}
+
+.navigationEnd{
+    padding-left: 25px;
+    padding-right: 90px;
+}
+
+.navigationSearch{
+    width: 225px; 
+    height: 32px; 
+    top: 14px; 
+    left: 976px; 
+    border-radius: 20px; 
+    background: var(--railwayLightGrey);
+}
+
+.navigationSearch::placeholder{
+    padding-left: 10px;
+}
+
+.navigationButton{
+    padding: 0;
+    border: none;
+    background: none;
+    padding-top: 7px;
+    padding-right: 15px;
+}
+
+.iconSearch{
+    width: 18px; 
+    height: 18px; 
+    top: 21px; 
+    left: 1167px; 
+    padding-right: 20px;
+    padding: 1.6719586849212646px 1.687185525894165px  1.687185525894165px 1.6719586849212646px; 
+}
+
+/* Start of ... */
+
+.projectName{
+    padding-left: 90px;
+    font-size: large;
+    color: var(--railwayWhite);
+}
+
+/* Start of the Progress bar */
+
+.containerProgressbar{
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--railwayBackground);
+}
+
+.Progressbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 1250px;
+    width: 100%;
+}
+
+.Progressbar .steps{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.steps .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    width: 34px;
+    color: var(--railwayWhite);
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 50%;
+    background: var(--railwayDarkGrey);
+    border: 3px solid var(--railwayDarkGrey);
+    z-index: 2;
+}
+
+.Progressbar .stepNaming{
+    display: flex;
+    width: 100%;
+    align-items: left;
+    justify-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.stepNaming .stepTitle {
+    font-size: 12px;
+    width: 70px;
+}
+
+.stepNaming .stepTitle.active {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--railwayBlack);
+    width: 75px;
+}
+
+.steps .circle.active{
+    color: white;
+    background-color: var(--railwayOrange);
+    border: 4px solid var(--railwayOrange);
+}
+
+.steps .progressLine {
+    position: absolute;
+    height: 1.5px;
+    width: 100%;
+    background: var(--railwayDarkGrey);
+    z-index: 1;
+}
+
+.progressLine .indicator {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: var(--railwayOrange);
+}
+
+.Progressbar .buttons {
+    display: flex;
+    gap: 50px;
+}
+
+.buttons button {
+    width: 150px;
+    padding: 8px 25px;
+    background: none;
+    border: 1.5px solid var(--railwayLightBlue);
+    border-radius: 25px;
+    color: var(--railwayLightBlue);
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.buttons button:disabled {
+    background: rgb(204, 185, 151);
+    cursor: not-allowed;
+}
+
+.containerTableStructure{
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--railwayBackground);
+}
+
+.row {
+    width: 1250px;
+}
+
+.row .col-8 {
+    padding-left: 0;
+    padding-bottom: 25px;
+}
+
+.row .col-8 .tableOne {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    background: var(--railwayWhite);
+    border: 1px solid var(--railwayLightGrey);
+}
+
+.row .col-4 {
+    padding: 0;
+}
+
+.verticalLine {
+    border-left: 1px solid var(--railwayLightGrey);
+    height: 70px;
+}
+
+.tableOneStart {
+    padding-left: 25px;
+    padding-right: 120px;
+}
+
+.tableOneMiddle {
+    padding-left: 25px;
+    padding-right: 150px;
+}
+
+.tableOneEnd {
+    padding-left: 25px;
+}
+
+.row .col-8 .tableTwo {
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    background: var(--railwayWhite);
+    border: 1px solid var(--railwayLightGrey);
+}
+
+.tableTwo .tableTwoStart {
+    display: flex;
+}
+
+.mainTitle {
+    font-size: 18px;
+    color: var(--railwayDarkGrey);
+    padding-left: 25px;
+    padding-bottom: 10px;
+}
+
+.tableTwo .subtitleTable {
+    padding-left: 25px;
+    padding-right: 50px;
+}
+
+.tableTwo .textTable {
+    padding-right: 25px;
+}
+
+.row .col-4 .tableThree {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    height: 310px;
+    background: var(--railwayWhite);
+    border: 1px solid var(--railwayLightGrey);
+}
+
+.row .col-4 .tableFour {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    height: 160px;
+    background: var(--railwayWhite);
+    border: 1px solid var(--railwayLightGrey);   
+}
+
+.documentFile {
+    display: flex;
+    padding-top: 15px;
+}
+
+.iconDocuments {
+    color: orange;
+}
+
+.horizontalLine{
+    border-bottom: 1px solid rgb(184, 184, 184);
+    height: 10px;
+    width: 350px;
+    margin-left: 25px;
+}
+
+.documentFile .iconFile{
+    padding-left: 25px;
+    height: 25px;
+    width: 45px;
+}
+
+.documentFile .documentTitle{
+    color: var(--railwayBlack);
+    padding-left: 15px;
+    padding-right: 195px;
+}
+
+.tableFour .documentFile .documentTitle{
+    color: var(--railwayBlack);
+    width: 360px;
+    padding-left: 25px;
+    padding-right: 15px;
+}
+
+.containerFooter {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-left: 110px;
+    border-top: 1px solid var(--railwayLightGrey);
+    background-color: var(--railwayWhite);
+}
+
+.returnProject{
+    padding-left: 100px;
+    padding-top: 15px;
+    background: var(--railwayBackground);
+}
+
+.returnProject img{
+    padding-right: 10px;
+}
+
+.containerFooter .buttons {
+    padding-left: 930px;
+}
+
+.containerSearch .input{
+    border: 0;
+    outline: none;
+    color: var(--railwayDarkBlue);
+}
+
+.searchWrap{
+    width: 300px;
+}
+
+.searchWrap .searchBox {
+    position: relative;
+    width: 300px;
+    height: 30px;
+}
+
+.searchWrap .searchBox .input {
+    color: var(--railwayBlack)
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: var(--railwayLightGrey);
+}
+
+.searchWrap .searchBox .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 15px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.searchWrap .searchBox img{
+    padding-bottom: 10px;
+}
+
+.greyText{
+    color: grey;
+    font-size: 14px;
+}

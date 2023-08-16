@@ -115,13 +115,14 @@
     display: flex;
     width: 100%;
     align-items: left;
+    justify-items: center;
     justify-content: space-between;
     position: relative;
 }
 
 .stepNaming .stepTitle {
     font-size: 12px;
-    width: 75px;
+    width: 70px;
 }
 
 .stepNaming .stepTitle.active {
@@ -211,7 +212,7 @@
 
 .tableOneStart {
     padding-left: 25px;
-    padding-right: 120px;
+    padding-right: 30px;
 }
 
 .tableOneMiddle {
@@ -256,7 +257,7 @@
     margin-bottom: 15px;
     padding-top: 15px;
     padding-bottom: 5px;
-    height: 310px;
+    height: 220px;
     background: var(--railwayWhite);
     border: 1px solid var(--railwayLightGrey);
 }
@@ -267,6 +268,34 @@
     height: 160px;
     background: var(--railwayWhite);
     border: 1px solid var(--railwayLightGrey);   
+}
+
+.row .col-4 .tableFive {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    height: 175px;
+    background: var(--railwayWhite);
+    border: 1px solid var(--railwayLightGrey);   
+}
+
+.row .col-4 .tableSix {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    height: 250px;
+    background: var(--railwayWhite);
+    border: 1px solid var(--railwayLightGrey);   
+}
+
+.containerNextPage {
+    display: flex;
+}
+
+.optionSelect label{
+    padding-left: 3px;
+    padding-right: 295px;
+    padding-bottom: 15px;
 }
 
 .documentFile {
@@ -298,6 +327,13 @@
 }
 
 .tableFour .documentFile .documentTitle{
+    color: var(--railwayBlack);
+    width: 360px;
+    padding-left: 25px;
+    padding-right: 15px;
+}
+
+.tableSix .documentFile .documentTitle{
     color: var(--railwayBlack);
     width: 360px;
     padding-left: 25px;

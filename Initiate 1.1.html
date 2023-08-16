@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Local CSS -->
-    <link rel="stylesheet" href="Assets/css/index.css">
+    <link rel="stylesheet" href="Assets/css/initiate.css">
     
     <title>Network Railway</title>
 </head>
@@ -71,7 +71,7 @@
         <div class="steps">
             <!-- Making the circular shapes for the progress -->
             <span class="circle active">1</span>
-            <span class="circle active">2</span>
+            <span class="circle">2</span>
             <span class="circle">3</span>
             <span class="circle">4</span>
             <span class="circle">5</span>
@@ -79,13 +79,13 @@
             <span class="circle">7</span>
             <!-- The line for the progress bar -->
             <div class="progressLine">
-                <span class="indicator" style="width: 18%;"></span>
+                <span class="indicator"></span>
             </div>
         </div>
         <!-- Titel of each circle -->
         <div class="stepNaming">
             <span class="stepTitle active">I.1 Autorise Client Remit</span>
-            <span class="stepTitle active">I.2 Create project in SE and import</span>
+            <span class="stepTitle">I.2 Create project in SE and import</span>
             <span class="stepTitle">I.3 User set up, incl. user account</span>
             <span class="stepTitle">I.4 Input intial project document</span>
             <span class="stepTitle">I.5 Import, collate and review</span>
@@ -109,7 +109,6 @@
                     <div class="tableOneMiddle">
                         <p class="subtitleTable">step</p>
                         <select class="form-select" aria-label="Default select example">
-                            <option selected>I.2 Create project in SE and import</option>
                             <option value="1">I.1 Autorise Client Remit</option>
                             <option value="2">I.2 Create project in SE and import</option>
                             <option value="3">I.3 User set up, incl. user account</option>
@@ -126,7 +125,7 @@
                     </div>
                     </div>
                     <div class="tableTwo">
-                        <h1 class="mainTitle">I.2 Create Project in SE and import relevant generic reference data, requirements and documentation</h1>
+                        <h1 class="mainTitle">I.1 Autorise Client Remit</h1>
                         <div class="tableTwoStart">
                         <p class="subtitleTable">Workflow</p>
                         <div>
@@ -138,20 +137,7 @@
                 </div>
 
                 <div class="col-4">
-                    <div class="tableFour">
-                        <h1 class="mainTitle">Tools</h1>
-                        <div class="documentFile">
-                            <a class="documentTitle" href="#">Bentley ComplyPro <span class="greyText">(validation & Verification)</span></a>
-                            <img src="Assets/images/iconArrowRight.svg" class="iconArrowRight">
-                        </div>
-                        <div class="horizontalLine"></div>
-                        <div class="documentFile">
-                            <a class="documentTitle" href="#">Enable My Team</a>
-                            <img src="Assets/images/iconArrowRight.svg" class="iconArrowRight">
-                        </div>
-                    </div>
-
-                    <div class="tableThree">
+                    <div class="tableThree" style="margin-top: 0;">
                         <h1 class="mainTitle">Documents</h1>
                         <div class="documentFile">
                             <img src="Assets/images/iconFile.svg" class="iconFile">
@@ -191,7 +177,7 @@
 
     <footer>
         <div class="containerFooter">
-            <a href="#" class="footerReturn">Back to step 1</a>
+            <a href="#" class="footerReturn">Back to [Project Name]</a>
             <div class="buttons">
                 <button id="next">Next step</button>
             </div>
