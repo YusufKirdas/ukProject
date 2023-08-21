@@ -307,11 +307,17 @@
 
 .containerFooter {
     display: flex;
+    justify-content: space-between;
     padding-top: 15px;
     padding-bottom: 5px;
     padding-left: 110px;
+    padding-right: 100px;
     border-top: 1px solid var(--railwayLightGrey);
     background-color: var(--railwayWhite);
+}
+
+.footerReturn{
+    width: 300px;
 }
 
 .returnProject{
@@ -324,9 +330,6 @@
     padding-right: 10px;
 }
 
-.containerFooter .buttons {
-    padding-left: 930px;
-}
 
 .containerSearch .input{
     border: 0;

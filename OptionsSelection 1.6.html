@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Local CSS -->
-    <link rel="stylesheet" href="Assets/css/initiate.css">
+    <link rel="stylesheet" href="Assets/css/optionsSelection.css">
     
     <title>Network Railway</title>
 </head>
@@ -76,21 +76,21 @@
             <span class="circle active">4</span>
             <span class="circle active">5</span>
             <span class="circle active">6</span>
-            <span class="circle active">7</span>
+            <span class="circle">7</span>
             <!-- The line for the progress bar -->
             <div class="progressLine">
-                <span class="indicator" style="width: 100%;"></span>
+                <span class="indicator" style="width: 82%;"></span>
             </div>
         </div>
         <!-- Titel of each circle -->
         <div class="stepNaming">
-            <span class="stepTitle active">I.1 Autorise Client Remit</span>
-            <span class="stepTitle active">I.2 Create project in SE and import</span>
-            <span class="stepTitle active">I.3 User set up, incl. user account</span>
-            <span class="stepTitle active">I.4 Input intial project document</span>
-            <span class="stepTitle active">I.5 Import, collate and review</span>
-            <span class="stepTitle active">I.6 Create geospatial model</span>
-            <span class="stepTitle active">I.7 Create 2d straight line plan</span>
+            <span class="stepTitle active">OS.1 Prepare and authorise Op.</span>
+            <span class="stepTitle active">OS.2 Carry out reasonable Op.</span>
+            <span class="stepTitle active">OS.3 Prepare design of the sig.</span>
+            <span class="stepTitle active">OS.4 Undertake appropiate analysis</span>
+            <span class="stepTitle active">OS.5 Stakeholders review req.</span>
+            <span class="stepTitle active">OS.6 Select Preferred Option</span>
+            <span class="stepTitle">OS.7 Obtain preliminary approval</span>
         </div>
         </div>
     </div>
@@ -103,20 +103,19 @@
                     <div class="tableOne">
                     <div class="tableOneStart">
                         <p class="subtitleTable">Phase</p>
-                        <p style="font-weight: 700;">Initiate</p>
+                        <p style="font-weight: 700;">Options Selection</p>
                     </div>
                     <div class="verticalLine"></div>
                     <div class="tableOneMiddle">
                         <p class="subtitleTable">step</p>
                         <select class="form-select" aria-label="Default select example">
-                            <option selected>I.7 Create 2d straight line plan</option>
-                            <option value="1">I.1 Autorise Client Remit</option>
-                            <option value="2">I.2 Create project in SE and import</option>
-                            <option value="3">I.3 User set up, incl. user account</option>
-                            <option value="4">I.4 Input intial project document</option>
-                            <option value="5">I.5 Import, collate and review</option>
-                            <option value="6">I.6 Create geospatial model</option>
-                            <option value="7">I.7 Create 2d straight line plan</option>
+                            <option value="1">OS.1 Prepare and authorise Op.</option>
+                            <option value="2">OS.2 Carry out reasonable Op.</option>
+                            <option value="3">OS.3 Prepare design of the sig.</option>
+                            <option value="4">OS.4 Undertake appropiate analysis</option>
+                            <option value="5">OS.5 Stakeholders review req.</option>
+                            <option selected value="6">OS.6 Select Preferred Option</option>
+                            <option value="7">OS.7 Obtain preliminary approval</option>
                         </select>
                     </div>
                     <div class="verticalLine"></div>
@@ -126,7 +125,7 @@
                     </div>
                     </div>
                     <div class="tableTwo">
-                        <h1 class="mainTitle">I.7 Create 2D straight-line schematic plan (not to scale)</h1>
+                        <h1 class="mainTitle">OS.6 Select Preferred Option, product Options Selection Report, and update Project Record with PAP scheme plan and supporting documentation</h1>
                         <div class="tableTwoStart">
                         <p class="subtitleTable">Workflow</p>
                         <div>
@@ -138,33 +137,87 @@
                 </div>
 
                 <div class="col-4">
-                    <div class="tableFour">
-                        <h1 class="mainTitle">Tools</h1>
+
+                    <!--
+                    <div class="tableFive">
+                        <h1 class="mainTitle">Select an option</h1>
+                        <div class="form-check">
+                            <div class="optionSelect">
+                            <label class="form-check-label" for="flexRadioDefault1">Option 1</label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            </div>
+                            <div class="optionSelect">
+                            <label class="form-check-label" for="flexRadioDefault1">Option 2</label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            </div>
+                            <div class="optionSelect">
+                            <label class="form-check-label" for="flexRadioDefault1">Option 3</label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tableSix">
+                        <h1 class="mainTitle">Track Segments</h1>
                         <div class="documentFile">
-                            <a class="documentTitle" href="#">Bentley Open Rail Designer <span class="greyText">(3D Design)</span></a>
+                            <a class="documentTitle" href="#">HLL D8_D29</a>
                             <img src="Assets/images/iconArrowRight.svg" class="iconArrowRight">
                         </div>
+                        <div class="horizontalLine"></div>
+                        <div class="documentFile">
+                            <a class="documentTitle" href="#">Track Segment 2</a>
+                            <img src="Assets/images/iconArrowRight.svg" class="iconArrowRight">
+                        </div>
+                        <div class="horizontalLine"></div>
+                        <div class="documentFile">
+                            <a class="documentTitle" href="#">Track Segment 3</a>
+                            <img src="Assets/images/iconArrowRight.svg" class="iconArrowRight">
+                        </div>
+                        <div class="containerNextPage">
+                            <div>
+                            <button class="noBtnBorder"> 
+                                <img class="iconSkip" src="Assets/images/iconPreviousDisabled.svg" alt=""> 
+                                <span style="color: #e2e2ea;">Previous</span> 
+                            </button>
+                            </div>
+                            <p>1/2</p>
+                            <div>
+                            <button class="noBtnBorder"> 
+                                <span style="color: #106AA3;">Next</span> 
+                                <img class="iconSkip" src="Assets/images/iconNext.svg" alt=""> 
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tableFour" style="height: 185px;">
+                        <h1 class="mainTitle">Tools</h1>
+                        <div class="documentFile">
+                            <a class="documentTitle" href="#">Agility3 RapidRaild <span class="greyText">(Enhanced Visualisation)</span></a>
+                            <img src="Assets/images/iconArrowRight.svg" class="iconArrowRight">
+                        </div>
+                        <div class="horizontalLine"></div>
+                        <div class="documentFile">
+                            <a class="documentTitle" href="#">Arup Rail Signaling Visualisation Tool <span class="greyText">(Enhanced Visualisation)</span></a>
+                            <img src="Assets/images/iconArrowRight.svg" class="iconArrowRight">
+                        </div>
+                        <!--
                         <div class="horizontalLine"></div>
                         <div class="documentFile">
                             <a class="documentTitle" href="#">Hitachi Sketch <span class="greyText">(2D Design)</span></a>
                             <img src="Assets/images/iconArrowRight.svg" class="iconArrowRight">
                         </div>
+                        <div class="horizontalLine"></div>
+                        <div class="documentFile">
+                            <a class="documentTitle" href="#">Prover Trident <span class="greyText">(Validation & Verification)</span></a>
+                            <img src="Assets/images/iconArrowRight.svg" class="iconArrowRight">
+                        </div>
+                        
                     </div>
+                    -->
 
-                    <div class="tableThree">
+                    <div class="tableThree" style="margin-top: 0;">
                         <h1 class="mainTitle">Documents</h1>
-                        <div class="documentFile">
-                            <img src="Assets/images/iconFile.svg" class="iconFile">
-                            <a class="documentTitle" href="#">Title document</a>
-                            <img src="Assets/images/iconArrowRight.svg" class="iconArrowRight">
-                        </div>
-                        <div class="horizontalLine"></div>
-                        <div class="documentFile">
-                            <img src="Assets/images/iconFile.svg" class="iconFile">
-                            <a class="documentTitle" href="#">Title document</a>
-                            <img src="Assets/images/iconArrowRight.svg" class="iconArrowRight">
-                        </div>
-                        <div class="horizontalLine"></div>
                         <div class="documentFile">
                             <img src="Assets/images/iconFile.svg" class="iconFile">
                             <a class="documentTitle" href="#">Title document</a>
@@ -191,7 +244,7 @@
 
     <footer>
         <div class="containerFooter">
-            <a href="#" class="footerReturn">Back to step 6</a>
+            <a href="#" class="footerReturn">Back to step 5</a>
             <div class="buttons">
                 <button id="next">Next step</button>
             </div>
