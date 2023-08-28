@@ -219,7 +219,7 @@
 .smallTable {
     display: flex;
     width: 4100px;
-    margin-left: 40px;
+    margin-left: 55px;
     border-bottom: 2px solid var(--railwayOrange);
 }
 
@@ -233,7 +233,7 @@
 
 .inputStyling{
     height: 30px;
-    border-radius: 3%;
+    border-radius: 5px;
     border: 1px solid var(--railwayDarkGrey);
     margin: 13px 15px 14px 0px;
 }
@@ -271,4 +271,79 @@
 .buttons button:disabled {
     background: rgb(204, 185, 151);
     cursor: not-allowed;
+}
+
+.subTabs {
+    padding: 8px 12px; 
+    justify-content: center; 
+    align-items: center;
+    border: 1px solid var(--link-blue, #106AA3); 
+    background-color: #FFF; 
+    color: #106AA3; 
+    color: var(--link-blue, #106AA3); 
+    font-family: Arial; 
+    font-size: 16px; 
+    font-style: normal; 
+    font-weight: 400; 
+    line-height: normal;
+}
+
+.subTabs.active {
+    color: white;
+    background-color: #106AA3;
+}
+
+.colomnLeft {
+    margin-top: 15px;
+    margin-left: 55px;
+    margin-right: 5px;
+}
+
+.colomnRight {
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 45px;
+}
+
+.inputText {
+    color: var(--railwayDarkGrey);
+    font-size: 14px;
+    font-weight: 700;
+    width: 280px; 
+    height: 30px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 25px;
+}
+
+.inputBox {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--railwayLightGrey);
+    border-radius: 5px;
+    width: 200px;
+    height: 35px;
+}
+
+.inputIcon {
+    margin-top: 18px; 
+    margin-left: 5px; 
+    width: 32px; 
+    height: 16px;
+}
+
+.cssText {
+    color: var(--railwayDarkGrey);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.addRow {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.addRow img{
+    padding-right: 10px;
+    padding-bottom: 2px;
 }
