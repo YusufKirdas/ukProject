@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Track Segment - Movement Authority</title>
+    </head>
+    <body style="background-color: #FAFAFB;">
+       <header id="header" style="width: 1440px; height: 60px; top: -7001px; left: 3756px; background-color: #FFF;">
+            <img src="assets/images/NETWORK RAIL LOGO 16 by 9 1.png" style="width: 103px; height: 58px; left: 10px; position: relative; background: url(assets/images/NETWORK\ RAIL\ LOGO\ 16\ by\ 9\ 1.png), lightgray 50% / cover no-repeat; margin-bottom: 2px; margin-left: 10px;">
+            <div id="header-search">
+                <input type="search" placeholder="Search" style="width: 225px; height: 32px; top: 14px; left: 976px; border-radius: 20px; background: #E2E2EA; position: absolute;">
+                <img src="assets/images/MagnifyingGlass.svg" style="width: 18px; height: 18px; top: 21px; left: 1167px; padding: 1.6719586849212646px 1.687185525894165px  1.687185525894165px 1.6719586849212646px; position: absolute;">
+            </div>
+            <div id="header-notification" style="width: 24px; height: 24px; top: 18px; left: 1241px; padding: 2.25px 3.0020225048065186px 2.250843048095703px 3.001086473464966px; position: absolute;">
+                <img src="assets/images/NotificationBell.svg" style="width: 17.996891021728516px; height: 19.499156951904297px; top: 2.25px; left: 3.0009765625px; position: absolute;">
+            </div>
+            <div id="header-login" style="width: 117px; height: 24px; top: 18px; left: 1283px; gap: 6px; position: absolute;">
+                <div id="header-people" style="width: 24px; height: 24px; padding: 2.25px 2.250000476837158px 2.2499961853027344px 2.249995708465576px; position: absolute;">
+                    <img src="assets/images/People.svg" style="width: 19.500003814697266px; height: 19.500003814697266px; top: 2.25px; left: 2.25px; position: absolute;">
+                    <label id="people-display" style="width: 100px; height: 16px; left: 30px; position: absolute; font-family: Arial; font-size: 14px; font-weight: 400; line-height: 16px; letter-spacing: 0em; text-align: left;">Paul Booth</label>
+                    <img src="assets/images/Subtract.svg" style="width: 12px; height: 6px; left: 100px; top: 10px; position: absolute;">
+                </div>
+            </div>
+            <div id="header-border" style="border-width: 0px 0px 1px 0px; background: linear-gradient(0deg, #E2E2EA, #E2E2EA),
+            linear-gradient(0deg, #FFFFFF, #FFFFFF); border-bottom: 1px solid #E2E2EA; max-width: 100%;">
+            </div>
+        </header>
+        <div id="project_container" style="width: 1440px; height: 60px; top: 60px; background: #E35100;">
+            <label id="project_name" style="font-family: Arial; font-size: 24px; font-weight: 700; line-height: 28px; letter-spacing: 0em; text-align: left; color: #FFFFFF; margin-left: 50px; vertical-align: middle; position: absolute; margin-top: 12px;">(Design template) Track Segment - HLL D8_D29</label>
+        </div>
+        <div id="back" style="width: 60px;height: 18px; margin: 20px;">
+            <img id="ArrowLeft" src="assets/images/ArrowLeft.svg" style="width: 16px; height: 16px; top: 145px;left: 40px;padding: 3px 2x 3px 2px; color: #106AA3;"></img>
+            <p id="Back" style="display: inline; width: 36px; height: 18px; top: 144px; left: 64px; font-family: Arial; font-size: 16px; font-weight: 400; line-height: 18px; letter-spacing: 0em; text-align: left; color: #106AA3;">Back</p>
+        </div>
+        <div id="tabs" style="margin-left: 10px;">
+            <button class="tablinks" onclick="setActiveTab()" style="border: none; display: inline; height: 32px; font-family: Arial;font-size: 14px;font-weight: 700;line-height: 16px;text-align: left;">Track Segment Details</button>
+            <button class="tablinks" onclick="setActiveTab()" style="border: none; display: inline; height: 32px; font-family: Arial;font-size: 14px;font-weight: 700;line-height: 16px;text-align: left;">Geometric Profile</button>
+            <button class="tablinks" onclick="setActiveTab()" style="border: none; display: inline; height: 32px; font-family: Arial;font-size: 14px;font-weight: 700;line-height: 16px;text-align: left;">Level Transition</button>
+            <button class="tablinks" onclick="setActiveTab()" style="border: none; display: inline; height: 32px; font-family: Arial;font-size: 14px;font-weight: 700;line-height: 16px;text-align: left;">Movement Authority</button>
+            <button class="tablinks" onclick="setActiveTab()" style="border: none; display: inline; height: 32px; font-family: Arial;font-size: 14px;font-weight: 700;line-height: 16px;text-align: left;">Profile Data</button>
+            <button class="tablinks" onclick="setActiveTab()" style="border: none; display: inline; height: 32px; font-family: Arial;font-size: 14px;font-weight: 700;line-height: 16px;text-align: left;">Signage</button>
+            <button class="tablinks" onclick="setActiveTab()" style="border: none; display: inline; height: 32px; font-family: Arial;font-size: 14px;font-weight: 700;line-height: 16px;text-align: left;">Stations</button>
+            <button class="tablinks" onclick="setActiveTab()" style="border: none; display: inline; height: 32px; font-family: Arial;font-size: 14px;font-weight: 700;line-height: 16px;text-align: left;">Train Detection Blocks</button>
+        </div>
+        <div id="table" style="width: 1360px;height: 1250px; border: 1px solid #E2E2EA; padding-left: 20px; padding-right: 20px; margin-left: 10px; margin-right: 10px; margin-bottom: 20px; background-color: #FFFFFF;">
+            <div style="background-color:#F5F5F5; padding: 10px; width: 992px; height: 53px; gap: 10px; display:inline-flex; margin-top: 24px; margin-bottom: 24px; margin-left: 24px;">
+                <p style="font-family: Arial; font-size: 18px; font-weight: 400; line-height: 21px; text-align: center; padding-left: 24px;">Everything to do with movement authorities including end of authority placement, train protection, and available routes.</p>
+            </div>
+            <div class="button_group">
+                <button style="display: inline-flex; padding: 8px 12px; justify-content: center; align-items: center; gap: 10px; border: 1px solid var(--link-blue, #106AA3); background-color: #FFF; color: #106AA3; color: var(--link-blue, #106AA3); font-family: Arial; font-size: 16px; font-style: normal; font-weight: 400; line-height: normal;">Geospatial</button>
+                <button style="display: inline-flex; padding: 8px 12px; justify-content: center; align-items: center; gap: 10px; border: 1px solid var(--link-blue, #106AA3); background-color: #FFF; color: #106AA3; color: var(--link-blue, #106AA3); font-family: Arial; font-size: 16px; font-style: normal; font-weight: 400; line-height: normal;">Schematic</button>
+                <button style="display: inline-flex; padding: 8px 12px; justify-content: center; align-items: center; gap: 10px; border: 1px solid var(--link-blue, #106AA3); background-color: #106AA3; color: var(--link-blue, #FFF); font-family: Arial; font-size: 16px; font-style: normal; font-weight: 400; line-height: normal;">Relative coordinates</button>
+            </div>
+            <div style="display: grid; grid-template-columns: 220px 100px 100px 130px; padding-left: 27px; margin-top: 33px;">
+                <p style="grid-column-start: 1; grid-row-start: 1; color: #666666;font-family: Arial;font-size: 14px;font-weight: 700;line-height: 16px;text-align: left;">Track Segment ID</p>
+                <input type="text" name="Start" style="grid-column-start: 2;  grid-row-start: 1;border: 1px solid #E2E2EA; border-radius: 4px; width: 80px;height: 34px; margin-top: 15px;">
+                <input type="text" name="Start" style="grid-column-start: 3;  grid-row-start: 1;border: 1px solid #E2E2EA; border-radius: 4px; width: 80px;height: 34px; margin-top: 15px;">
+                <p style="grid-column-start: 4; grid-row-start: 1; color: #666666;font-family: Arial;font-size: 14px;font-weight: 700;line-height: 16px;text-align: left;">Starting Option</p>
+
+                <p style="grid-column-start: 1; grid-row-start: 2; color: #666666;font-family: Arial;font-size: 14px;font-weight: 700;line-height: 16px;text-align: left;">Track Segment Date</p>
+                <input type="text" name="Start" style="grid-column-start: 2; grid-row-start: 2; border: 1px solid #E2E2EA; border-radius: 4px; width: 80px;height: 34px; margin-top: 15px;">
+                <input type="text" name="Start" style="grid-column-start: 3; grid-row-start: 2; border: 1px solid #E2E2EA; border-radius: 4px; width: 80px;height: 34px; margin-top: 15px;">
+                <p style="grid-column-start: 4; grid-row-start: 2; color: #666666;font-family: Arial;font-size: 14px;font-weight: 700;line-height: 16px;text-align: left;">Mode with invalid position</p>
+
+                <p style="grid-column-start: 1; grid-row-start: 3; color: #666666;font-family: Arial;font-size: 14px;font-weight: 700;line-height: 16px;text-align: left;">EOA ID</p>
+                <input type="text" name="Start" style="grid-column-start: 2; grid-row-start: 3; border: 1px solid #E2E2EA; border-radius: 4px; width: 80px;height: 34px; margin-top: 15px;">
+                <input type="text" name="Start" style="grid-column-start: 3; grid-row-start: 3; border: 1px solid #E2E2EA; border-radius: 4px; width: 80px;height: 34px; margin-top: 15px;">
+                <p style="grid-column-start: 4; grid-row-start: 3; color: #666666;font-family: Arial;font-size: 14px;font-weight: 700;line-height: 16px;text-align: left;">Mode with unknown position</p>
+
+                <p style="grid-column-start: 1; grid-row-start: 4; color: #666666;font-family: Arial;font-size: 14px;font-weight: 700;line-height: 16px;text-align: left;">Section Appendix ELR</p>
+                <input type="text" name="Start" style="grid-column-start: 2; grid-row-start: 4; border: 1px solid #E2E2EA; border-radius: 4px; width: 80px;height: 34px; margin-top: 15px;">
+                <input type="text" name="Start" style="grid-column-start: 3; grid-row-start: 4; border: 1px solid #E2E2EA; border-radius: 4px; width: 80px;height: 34px; margin-top: 15px;">
+                <p style="grid-column-start: 4; grid-row-start: 4; color: #666666;font-family: Arial;font-size: 14px;font-weight: 700;line-height: 16px;text-align: left;">Start of Immediate FS Window</p>
+
+                <p style="grid-column-start: 1; grid-row-start: 5; color: #666666;font-family: Arial;font-size: 14px;font-weight: 700;line-height: 16px;text-align: left;">Minimum Headway for Option 2</p>
+                <input type="text" name="Start" style="grid-column-start: 2; grid-row-start: 5; border: 1px solid #E2E2EA; border-radius: 4px; width: 80px;height: 34px; margin-top: 15px;">
+                <input type="text" name="Start" style="grid-column-start: 3; grid-row-start: 5; border: 1px solid #E2E2EA; border-radius: 4px; width: 80px;height: 34px; margin-top: 15px;">
+                <p style="grid-column-start: 4; grid-row-start: 5; color: #666666;font-family: Arial;font-size: 14px;font-weight: 700;line-height: 16px;text-align: left;">Seconds</p>
+
+                <p style="grid-column-start: 1; grid-row-start: 6; color: #666666;font-family: Arial;font-size: 14px;font-weight: 700;line-height: 16px;text-align: left;">Minimum Headway for Option 3</p>
+                <input type="text" name="Start" style="grid-column-start: 2; grid-row-start: 6; border: 1px solid #E2E2EA; border-radius: 4px; width: 80px;height: 34px; margin-top: 15px;">
+                <input type="text" name="Start" style="grid-column-start: 3; grid-row-start: 6; border: 1px solid #E2E2EA; border-radius: 4px; width: 80px;height: 34px; margin-top: 15px;">
+                <p style="grid-column-start: 4; grid-row-start: 6; color: #666666;font-family: Arial;font-size: 14px;font-weight: 700;line-height: 16px;text-align: left;">Seconds</p>
+
+                <p style="grid-column-start: 1; grid-row-start: 7; color: #666666;font-family: Arial;font-size: 14px;font-weight: 700;line-height: 16px;text-align: left;">Minimum EOA for Option 1</p>
+                <input type="text" name="Start" style="grid-column-start: 2; grid-row-start: 7; border: 1px solid #E2E2EA; border-radius: 4px; width: 80px;height: 34px; margin-top: 15px;">
+                <input type="text" name="Start" style="grid-column-start: 3; grid-row-start: 7; border: 1px solid #E2E2EA; border-radius: 4px; width: 80px;height: 34px; margin-top: 15px;">
+                <p style="grid-column-start: 4; grid-row-start: 7; color: #666666;font-family: Arial;font-size: 14px;font-weight: 700;line-height: 16px;text-align: left;">Number of EOAs</p>
+
+                <p style="grid-column-start: 1; grid-row-start: 8; color: #666666;font-family: Arial;font-size: 14px;font-weight: 700;line-height: 16px;text-align: left;">Minimum EOA for Option 2</p>
+                <input type="text" name="Start" style="grid-column-start: 2; grid-row-start: 8; border: 1px solid #E2E2EA; border-radius: 4px; width: 80px;height: 34px; margin-top: 15px;">
+                <input type="text" name="Start" style="grid-column-start: 3; grid-row-start: 8; border: 1px solid #E2E2EA; border-radius: 4px; width: 80px;height: 34px; margin-top: 15px;">
+                <p style="grid-column-start: 4; grid-row-start: 8; color: #666666;font-family: Arial;font-size: 14px;font-weight: 700;line-height: 16px;text-align: left;">Number of EOAs</p>
+
+                <p style="grid-column-start: 1; grid-row-start: 9; color: #666666;font-family: Arial;font-size: 14px;font-weight: 700;line-height: 16px;text-align: left;">Minimum EOA for Option 3</p>
+                <input type="text" name="Start" style="grid-column-start: 2; grid-row-start: 9; border: 1px solid #E2E2EA; border-radius: 4px; width: 80px;height: 34px; margin-top: 15px;">
+                <input type="text" name="Start" style="grid-column-start: 3; grid-row-start: 9; border: 1px solid #E2E2EA; border-radius: 4px; width: 80px;height: 34px; margin-top: 15px;">
+                <p style="grid-column-start: 4; grid-row-start: 9; color: #666666;font-family: Arial;font-size: 14px;font-weight: 700;line-height: 16px;text-align: left;">Number of EOAs</p>
+            </div>
+                
+        <div style="display: flex; justify-content: space-between; background-color: #ffffff; width: 1440px; height: 74px; flex-shrink: 0; margin-top: 38px; border-top: 1px solid #e2e2ea;">
+            <p id="Cancel" style="color: var(--link-blue, #106AA3); font-family: Arial; font-size: 16px; font-style: normal; font-weight: 400; line-height: normal; width: 50px; height: 18px; margin-top: 30px; margin-bottom: 28px; margin-left: 15px; padding: 0px;">Cancel</p>
+            <button type="save" style="background-color: #FFFFFF; display: inline; padding: 12px 16px 12px 16px; border-radius: 20px; width: 170px; height: 42px; border-color: #005272; color: #005272; margin-top: 20px; margin-right: 25px;">Save</button>
+        </div>
+        <script src="public/javascript/jquery-1.11.3.js"></script>
+        <script type="text/javascript">
+            function setActiveTab() {
+                $('.tab button').on('click', function() {
+                    $('.tabs .active').removeClass('active');
+                    $(this).addClass('active');
+                });
+            };
+        </script>
+    </body>
+</html>
+
+<style>
+    .tab button:hover{
+        background-color: #ddd;
+    }
+
+    .tab button.active{
+        background-color: #FAFAFB;
+    }
+
+    .tabs a:hover,
+.tabs a.active { background-color:#bbb; }
+
+
+    hr {
+        height: 1px;
+        background-color: #E35100;
+        border: none;
+      }
+
+      .button_group {
+        display: flex;
+        font-size: 0;
+        margin-left: 27px;
+      }
+</style>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="Assets/css/trackSegment.css">
+    
+    <title>Network Railway</title>
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Logo -->
+        <a href="" class="col-sm">
+        <img src="Assets/images/networkRailLogo.png" class="navbar-brand">
+        </a>
+        <!-- Search -->
+        <div class="containerSearch">
+            <div class="searchWrap">
+                <div class="searchBox">
+                    <div class="btn btn_common">
+                        <img src="Assets/images/iconSearch.svg" alt="">
+                    </div>
+                    <input type="text" class="input" placeholder="Search...">
+                </div>
+            </div>
+        </div>
+        <!-- Notification -->
+        <div class="navigationEnd">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!-- Notification -->
+                <li class="nav-item active">
+                    <button class="navigationButton" type="submit"><img src="Assets/images/iconNotification.svg" alt=""></button>
+                    <button class="navigationButton" type="submit"><img src="Assets/images/iconPeople.svg" alt=""></button>
+                </li>
+            <!-- Login / Logout -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Paul Booth
+                </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Personal info</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Log out</a>
+            </div>
+            </li>
+        </ul>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Second Navbar to identify the project name -->
+    <nav class="navbar navbar-light" style="background-color: #e34100">
+        <h1 class="projectName">[Project name] - Design Workflow</h1>
+    </nav>
+    <!-- Back button to Project -->
+    <div class="returnProject">
+    <a href="#"><img src="Assets/images/iconArrowLeft.svg" alt="">Back</a>
+    </div>
+
+    <!-- Buttons for the possible tabs -->
+    <div id="tabs" style="margin-left: 110px;">
+        <button class="tabLinks" onclick="setActiveTab()">Track Segment Details</button>
+        <button class="tabLinks" onclick="setActiveTab()">Geometric Profile</button>
+        <button class="tabLinks" onclick="setActiveTab()">Level Transition</button>
+        <button class="tabLinks" onclick="setActiveTab()">Movement Authority</button>
+        <button class="tabLinks" onclick="setActiveTab()">Profile Data</button>
+        <button class="tabLinks" onclick="setActiveTab()">Signage</button>
+        <button class="tabLinks" onclick="setActiveTab()">Stations</button>
+        <button class="tabLinks active" onclick="setActiveTab()">Train Detection Blocks</button>
+    </div>
+
+    <!-- Table of tab: Level Transition -->
+    <div id="table" class="mainTable"">
+        <!-- Hierarchy of the Table -->
+        <p class="subTitle" style="margin-left: 40px; width: 380px;">Details of Train Detection blocks in the segment</p>
+        <div class="tableHierarchy" style="width: 2400px;">
+            <div style="display: flex;">
+                <p class="tableInput1" style="margin-left: 355px; width: 860px;">Start Location relative to track segment origin</p>
+                <p class="tableInput1" style="margin-left: 150px; width: 860px;">End Location relative to track segment origin</p>
+            </div>
+            <div style="display: flex;">
+                <p class="tableInput2" style="margin-left: 355px; width: 440px;">Linear Co-ordinates</p>
+                <p class="tableInput3" style="margin-left: 100px; width: 320px;">Geospatial Co-ordinates</p>
+                <p class="tableInput2" style="margin-left: 150px; width: 440px;">Linear Co-ordinates</p>
+                <p class="tableInput3" style="margin-left: 100px; width: 320px;">Geospatial Co-ordinates</p>
+            </div>
+        </div>
+
+        <!-- Title of the Inputs -->
+        <div class="smallTable" style="width: 2400px;">
+            <p style="margin-right: 20px; width: 170px;">Track section ID</p>
+            <p style="margin-right: 15px; width: 110px;">Length</p>
+            <p style="margin-right: 135px; padding-top: 0; width: 140px;">Track segment datum (Up end)</p> 
+            <p style="margin-right: 100px; padding-top: 0;">Linear distance along centreline from datum (m)</p>
+            <p style="margin-right: 60px; width: 95px;">X</p>
+            <p style="margin-right: 60px; width: 95px;">Y</p>
+            <p style="margin-right: 60px; width: 95px;">Z</p>
+            <p style="margin-right: 135px; padding-top: 0; width: 140px;">Track segment datum (Up end)</p>
+            <p style="margin-right: 100px; padding-top: 0;">Linear distance along centreline from datum (m)</p>
+            <p style="margin-right: 60px; width: 95px;">X</p>
+            <p style="margin-right: 60px; width: 95px;">Y</p>
+            <p style="margin-right: 60px; width: 95px;">Z</p>
+        </div>
+
+        <!-- Rows of Inputs -->
+        <div style="display: flex; padding-left: 20px; margin-left: 20px; width: 2400px;">
+            <input type="text" class="inputStyling" style="width: 170px;">
+            <input type="text" class="inputStyling" style="width: 110px;">
+            <input type="text" class="inputStyling" style="width: 260px;">
+            <input type="text" class="inputStyling" style="width: 260px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+            <input type="text" class="inputStyling" style="width: 260px;">
+            <input type="text" class="inputStyling" style="width: 260px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+        </div>
+        <!-- Rows of Inputs (with background) -->
+        <div style="display: flex; padding-left: 20px; margin-left: 20px; width: 2400px; background-color: #e2e2ea;">
+            <input type="text" class="inputStyling" style="width: 170px;">
+            <input type="text" class="inputStyling" style="width: 110px;">
+            <input type="text" class="inputStyling" style="width: 260px;">
+            <input type="text" class="inputStyling" style="width: 260px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+            <input type="text" class="inputStyling" style="width: 260px;">
+            <input type="text" class="inputStyling" style="width: 260px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+        </div>
+        <!-- Rows of Inputs -->
+        <div style="display: flex; padding-left: 20px; margin-left: 20px; width: 2400px;">
+            <input type="text" class="inputStyling" style="width: 170px;">
+            <input type="text" class="inputStyling" style="width: 110px;">
+            <input type="text" class="inputStyling" style="width: 260px;">
+            <input type="text" class="inputStyling" style="width: 260px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+            <input type="text" class="inputStyling" style="width: 260px;">
+            <input type="text" class="inputStyling" style="width: 260px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+        </div>
+        <!-- Rows of Inputs (with background) -->
+        <div style="display: flex; padding-left: 20px; margin-left: 20px; width: 2400px; background-color: #e2e2ea;">
+            <input type="text" class="inputStyling" style="width: 170px;">
+            <input type="text" class="inputStyling" style="width: 110px;">
+            <input type="text" class="inputStyling" style="width: 260px;">
+            <input type="text" class="inputStyling" style="width: 260px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+            <input type="text" class="inputStyling" style="width: 260px;">
+            <input type="text" class="inputStyling" style="width: 260px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+        </div>
+        <!-- Rows of Inputs -->
+        <div style="display: flex; padding-left: 20px; margin-left: 20px; width: 2400px;">
+            <input type="text" class="inputStyling" style="width: 170px;">
+            <input type="text" class="inputStyling" style="width: 110px;">
+            <input type="text" class="inputStyling" style="width: 260px;">
+            <input type="text" class="inputStyling" style="width: 260px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+            <input type="text" class="inputStyling" style="width: 260px;">
+            <input type="text" class="inputStyling" style="width: 260px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+        </div>
+        <!-- Rows of Inputs (with background) -->
+        <div style="display: flex; padding-left: 20px; margin-left: 20px; width: 2400px; background-color: #e2e2ea;">
+            <input type="text" class="inputStyling" style="width: 170px;">
+            <input type="text" class="inputStyling" style="width: 110px;">
+            <input type="text" class="inputStyling" style="width: 260px;">
+            <input type="text" class="inputStyling" style="width: 260px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+            <input type="text" class="inputStyling" style="width: 260px;">
+            <input type="text" class="inputStyling" style="width: 260px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+            <input type="text" class="inputStyling" style="width: 140px;">
+        </div>
+        </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="containerFooter">
+            <a href="#" class="footerReturn">Cancel</a>
+            <div class="buttons">
+                <button id="next">Save</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
